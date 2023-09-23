@@ -1,11 +1,447 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<header>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exploring Bootstrap: One-Page Web Page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Accordion</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+
+.carousel-item{
+    min-height: 280px;
+}
+body 
+    { 
+        font-family: "Poppins", sans-serif;
+        background-color: #bbbbbb;
+    }
+.cardlayer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.primary{
+    background-color:#d3cbc5;
+}
+
+</style>
+
+</header>
 <body>
-    <h1>Welcome</h1>
-    <p>Hello World/p>
+
+    <div class="m-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="logo.png" height="90" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#carousel" class="nav-item nav-link active"><b>Home</a></b>
+                        <a href="#bscpe" class="nav-item nav-link"><b>What is BS CpE?</a></b>
+                        <a href="#special" class="nav-item nav-link"><b>Specializations</a></b>
+                        <a href="#whatwedo" class="nav-item nav-link"><b>What We Do</a></b>
+                        <a href="#aboutdeprt" class="nav-item nav-link"><b>About the Department</a></b> 
+                        <a href="#stud" class="nav-item nav-link"><b>Student Organization</a></b>                          
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+<div class="container-lg my-3">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+        </ol>
+        
+        <!-- Wrapper for carousel items -->
+        <section id="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="f1slide.png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="f2slide.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="f3slide.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="f4slide.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+                <img src="f5slide.jpg" class="d-block w-100" alt="Slide 5">
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<section id="bscpe">
+<h1><ul> What is BS CpE?</h1></ul>
+<p><ul>A Bachelor of Science in Computer Engineering is an undergraduate academic degree program that focuses on the intersection of computer science and electrical engineering. It is designed to provide students with a comprehensive education in both hardware and software aspects of computing systems.</p></ul>
+<div class="m-4">
+<div class="primary">    
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne"><h5>1. Objectives</button></h5>									
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <ul><p><b>Hardware and Software Integration:</b> The primary objective of a BS CpE program is to equip students with a comprehensive understanding of both hardware and software aspects of computer systems. This includes computer architecture, digital logic design, programming languages, and operating systems.</ul>
+                        <ul><b>Problem-Solving Skills:</b> Students learn to analyze complex problems and develop innovative solutions that involve the design, implementation, and optimization of computer systems. These problem-solving skills are essential for addressing real-world challenges in technology.</ul>                        
+                        <ul><b>Hands-On Experience:</b> Practical experience is a crucial component of the program. Students often engage in hands-on projects, labs, and internships to apply their theoretical knowledge to real-world scenarios, fostering creativity and technical proficiency.</ul>                        
+                        <ul><b>Ethical and Professional Development:</b> BS CpE programs typically emphasize ethical conduct and professional responsibility in the field of computer engineering. Graduates are expected to adhere to ethical standards and contribute positively to society.</ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"><h5>2. Scope</button></h5>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p><ul><b>Digital Logic Design:</b> Understanding the fundamental building blocks of digital circuits, which are essential for computer hardware design.</ul>
+                        <ul><b>Microprocessors and Computer Architecture:</b> Exploring the inner workings of CPUs and computer systems, including memory management and instruction pipelines.</ul>        
+                        <ul><b>Programming and Software Engineering:</b> Learning programming languages and software development methodologies to create applications and systems.</ul>                     
+                        <ul><b>Embedded Systems:</b> Designing and programming small-scale computer systems for specific applications like IoT devices and robotics.</ul>                        
+                        <ul><b>Networking:</b> Studying the principles of computer networking and communication protocols.</ul>                        
+                        <ul><b>Operating Systems:</b> Understanding the core concepts of OS design and operation.</ul>                    
+                        <ul><b>Signal Processing:</b> Learning how to process and manipulate digital signals, often used in multimedia and communication systems.</ul>
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"><h5>3. Significance</button></h5>                  
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>
+                        <ul><b>Technology Advancements:</b> In an increasingly digital world, computer engineers are at the forefront of technological advancements. They drive innovation by designing and improving computer systems and applications.</ul>                        
+                        <ul><b>Diverse Career Opportunities:</b> Graduates of BS CpE programs have a wide array of career opportunities in industries such as IT, telecommunications, electronics, automotive, aerospace, and more. They can work as hardware engineers, software developers, network engineers, system architects, and more.</ul>                       
+                        <ul><b>Problem Solvers:</b> Computer engineers are problem solvers by nature. They tackle complex challenges, from improving the efficiency of microprocessors to creating secure and robust software applications.</ul>                       
+                        <ul><b>Technological Impact:</b> Computer engineers play a crucial role in shaping the future, contributing to developments in artificial intelligence, automation, cybersecurity, and sustainable technologies.</ul></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<p>
+<div>
+    <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8J3kTGaU5F8?si=AVHRoSD8Wezctqcx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>           
+    </center>
+</div>
+</p>
+<!-- <section id="bscpe"> -->
+<ul><h1><p>Instructor of BSCpE Department</p></h1></ul>
+
+<div class="row row-cols-1 row-cols-md-3 g-3">
+    <div class="col">
+        <div class="card" style="max-width: 400px; margin: auto; display: grid;">
+            <img src="errol.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ERROL JOHN MELENDEZ ANTONIO</h5>
+                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="max-width: 400px; margin: auto; display: grid;">
+            <img src="lim.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">MARY ANN LAXAMANA LIMKIAN</h5>
+                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="max-width: 400px; margin: auto; display: grid;">
+            <img src="onofre.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ONOFRE FERNANDEZ CORPUZ</h5>
+                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!-- </section> -->
+
+<section id="special">
+<h1><ul> Specializations</h1></ul>
+<div class="card-group" style="margin-left: 127px">
+<div class="m-4">
+        <div class="card border-0" style="max-width: 500px;">
+            <div class="row g-0">
+                <div class="col-sm-5" style="background: #868e96; ">
+                    <img src="embedded.png" class="card-img-top h-100" alt="...">
+                </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Embedded Systems</h5></b>
+                    <p class="card-text"><q>Specializing in embedded systems involves designing and programming computer systems integrated into various devices, such as microcontrollers and IoT gadgets.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96; ">
+                <img src="sec.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Cybersecurity</h5></b>
+                    <p class="card-text"><q>This specialization focuses on safeguarding computer systems and networks from cyber threats. Topics include ethical hacking, digital forensics, cryptography, and security policy development.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="ai.jpg" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Artificial Intelligence (AI)</h5></b>
+                    <p class="card-text"><q>Students delve into AI and machine learning, gaining expertise in algorithms, neural networks, and applications in fields like natural language processing and computer vision.</p></q>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
+
+<div class="card-group" style="margin-left: 127px">
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="networking.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Network Engineering</h5></b>
+                    <p class="card-text"><q>Network engineering concentrates on the design, implementation, and management of computer networks. Students learn about network protocols, wireless communication and security.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="softwareD.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Software Development</h5></b>
+                    <p class="card-text"><q>Specializing in software development involves creating applications and systems for various platforms. Topics include programming languages, software design, testing, and maintenance.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="robotics.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Robotics and Automation</h5></b>
+                    <p class="card-text"><q>This specialization delves into the design, programming, and automation of robotic systems, applicable in manufacturing, healthcare, autonomous vehicles, and more.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="card-group" style="margin-left: 127px">
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="vlsi.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>VLSI Design</b></h5>
+                    <p class="card-text"><q>VLSI design focuses on developing integrated circuits and microchips. Students cover chip design methodologies, transistor-level design, and semiconductor manufacturing processes.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="gamedev.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Game Development</b></h5>
+                    <p class="card-text"><q>This specialization combines computer engineering and game design, focusing on graphics programming, game engine development and immersive gameplay experiences.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-4">
+    <div class="card border-0" style="max-width: 500px;">
+        <div class="row g-0">
+            <div class="col-sm-5" style="background: #868e96;">
+                <img src="iot.png" class="card-img-top h-100" alt="...">
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title"><b>IoT (Internet of Things)</h5></b>
+                    <p class="card-text"><q>Specializing in IoT, students work on creating and connecting smart, interconnected devices and systems. Topics include sensor networks, IoT protocols, and data analytics for IoT applications.</p></q>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<br><br>
+<section id="whatwedo">
+<h1><ul> What We Do?</h1></ul>
+<center>
+<div class="m-4">
+    <div class="card border-0" style="max-width: 1200px;">
+        <div class="row g-0">
+            <div class="col-sm-5">
+              <iframe width="500" height="330" src="https://www.youtube.com/embed/6vgW-RzZSoo?si=-JYO41BfleI2HKxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h4 class="card-title">Exploring the World of BSCpE: What Computer Engineering Students Do</h4>
+			<p class="card-text"><br> is a descriptive and inviting title for a video or content series. In summary, it suggests that the content will provide viewers with an in-depth look into the experiences and activities of Bachelor of Science in Computer Engineering (BSCpE) students. It implies that the video will delve into the various facets of the BSCpE program, highlighting the projects, initiatives, and day-to-day life of computer engineering students, ultimately answering the question of what these students are involved in during their studies. This title aims to pique viewers' interest and encourage them to watch the content to gain insights into the world of BSCpE students.</p></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</center>
+<br><br>
+<section id="aboutdeprt">
+<h1><ul> About the Department</h1></ul>
+<div class="card-group">
+    <div class="m-4">
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-white bg-primary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>MISSION</b></h5>
+                        <p class="card-text">The Department of Computer Engineering declares its role to produce competitive engineers who are knowledgeable in the fundamental areas of digital and computer system design, software development, and modeling of physical systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card text-white bg-danger mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>VISION</b></h5>
+                        <p class="card-text">The Department of Computer Engineering will impact the information age as a national leader in computing, research, and education.</p>
+                    </div>
+                </div>
+            </div>
+            <center>
+            <div class="col-6">
+                <div class="card text-white bg-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>PROGRAM EDUCATIONAL OBJECTIVES</b></h5>
+                        <p class="card-text"><ul>After three to five years from graduation, the Computer Engineering alumni shall:</ul></p>
+                        <p><ul>1. Have pursued advancement towards becoming globally competitive leaders in their chosen field of practice</ul></p>
+                        <p>2. Be a contributor to the development of a progressive society, guided by the UE core values of Excellence, Integrity, Professionalism, Teamwork, Commitment, Transparency, Accountability and Social Responsibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </section>
+</section>
+<section id="stud">
+<h1>Student Organization</h1>
+
+        <center>
+            <div class="container">
+            <div class="m-5">
+                <div class="card text-white" style="width: 1000px;">
+                    <img src="studOrg1.jpg">
+                    </div>
+                </div>
+            
+            <div class="m-5">
+              <div class="card text-white" style="width: 1000px;">
+                  <img src="studOrg2.jpg" class="cardlayer">
+                </div>
+              </div>
+            </div>
+        </center>
+        <center>
+    <i><p><h5>Feel Free to Visit Our Facebook Page <a href="https://www.facebook.com/uescpes"><u style="color: #2a9df4;">https://www.facebook.com/uescpes</u></a></h5></center></p></i>
+</section>            
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>
